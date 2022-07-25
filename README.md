@@ -2,6 +2,8 @@
 
 To show github starred repos list
 
+Step:`yarn install`
+
 **How to run in Prod Environment**  
 Step1: `yarn build:dev`  
 Step2: Enable developer mode  
