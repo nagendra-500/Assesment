@@ -29,7 +29,7 @@
           <div v-if="githubRepos">
             <div>
               <b-card class="m-3">
-                <b-table id="my-table" responsive :busy.sync="isBusy" :items="myProvider" :per-page="perPage" :fields="fields" :current-page="currentPage" small class="text-nowrap">
+                <b-table id="my-table" responsive :busy.sync="isBusy" :items="myProvider" :per-page="perPage" :fields="fields" :current-page="currentPage" small class="text-nowrap" lazy>
                   <template #cell(gravatar)="data">
                     <div>
                       <b-img :src="data.value" class="rounded-circle w-25"></b-img>
